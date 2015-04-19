@@ -1,0 +1,47 @@
+.intro-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url('/images/bg-intro.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.intro-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(34, 34, 34, 0.78);
+	z-index: 2;
+}
+
+.intro-wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+.intro-box {
+	width: 280px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -140px;
+	margin-top: 200px;
+	text-align: center;
+}
+
+.intro-box h1 {
+	color: #fff;
+	font-size: 18px;
+  	margin-bottom: 40px;
+}
+
+.btn-intro {
+	width: 120px;
+	margin: 0 5px;
+}

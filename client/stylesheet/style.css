@@ -1,0 +1,24 @@
+a { transition: all .3s ease-in-out }
+
+/* Fonts */
+@font-face {
+  font-family: 'asapRegular';
+  src: url('/fonts/asap-regular-webfont.woff2') format('woff2'),
+       url('/fonts/asap-regular-webfont.woff') format('woff'),
+       url('/fonts/asap-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'asapBold';
+  src: url('/fonts/asap-bold-webfont.woff2') format('woff2'),
+       url('/fonts/asap-bold-webfont.woff') format('woff'),
+       url('/fonts/asap-bold-webfont.ttf') format('truetype');
+}
+
+body {
+	font-family: 'asapRegular';
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'asapBold';
+}

@@ -9,3 +9,7 @@ autopublish
 insecure
 fezvrasta:bootstrap-material-design
 iron:router
+useraccounts:unstyled
+accounts-facebook
+accounts-twitter
+accounts-google
