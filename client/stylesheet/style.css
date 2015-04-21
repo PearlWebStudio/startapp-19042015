@@ -1,4 +1,9 @@
+body {
+    overflow-x: hidden;
+}
+
 a { transition: all .3s ease-in-out }
+a:hover, a:focus, a:active { text-decoration: none; }
 
 /* Fonts */
 @font-face {

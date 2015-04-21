@@ -1,0 +1,12 @@
+<template name="customAtForm">
+
+  {{#unless hide}}
+    <div class="at-form">
+        {{> atError}}
+        {{> atResult}}
+
+        {{> atPwdForm}}
+
+    </div>
+  {{/unless}}
+</template>

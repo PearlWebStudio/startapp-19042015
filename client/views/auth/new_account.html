@@ -1,0 +1,25 @@
+<template name="createNewAccount">
+
+    <div class="content">
+
+        {{>navAuth}}
+
+        <div class="intro-wrap">
+            <div class="intro-box">
+
+                <header>Welcome!
+                    <br>Let's get you started on Teasify</header>
+
+                {{> atForm state='signUp'}}
+
+                <footer>
+                    <p>By creating your account, you confirm that you've read and accept the <a class="segue-fade" href="{{pathFor 'terms'}}">Terms of Service</a>
+                    </p>
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+</template>

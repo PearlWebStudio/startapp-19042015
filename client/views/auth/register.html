@@ -1,1 +1,23 @@
-<template name="signUp"></template>
+<template name="register">
+
+    <div class="content">
+
+        {{>navAuth}}
+
+        <div class="intro-wrap">
+            <div class="intro-box">
+                {{> atOauth}}
+                <a class="btn btn-primary btn-auth navigate-right" href="{{pathFor 'createNewAccount'}}">Email</a>
+
+                <footer>
+                    <h4>Not to worry</h4>
+                    <p>We wil never post on your profile
+                        <br>without permission, spam your friends
+                        <br>or share your private data.</p>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+</template>
