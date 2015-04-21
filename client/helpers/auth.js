@@ -2,7 +2,7 @@ Template.signOut.events({
   'click #signOut': function(e, t) {
 
     Meteor.logout(function() {
-      	Router.go('index')
+      	Router.go('/')
     });
 
     return false;

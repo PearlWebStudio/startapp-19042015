@@ -1,15 +1,5 @@
 Meteor.startup(function() {
 
-//	  // user roles
-//	  var roles = ['banned', 'active', 'master', 'admin']
-//
-//	  // this will fail if the roles package isn't installed
-//	  if(Meteor.roles.find().count() === 0) {
-//		roles.map(function(role) {
-//		  Roles.createRole(role)
-//		})
-//	  }
-
     if (Meteor.users.find().count() === 0) {
         var users = [{
             name: "moderator",
@@ -36,6 +26,7 @@ Meteor.startup(function() {
 				username: user.username,
 				email: user.email,
                 password: "password",
+				verified: true,
             });
 
             if (user.roles.length > 0) {
