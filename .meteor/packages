@@ -17,3 +17,7 @@ accounts-ui
 accounts-password
 aldeed:template-extension
 zendy:segue
+joshdellay:jquery-mobile-menu
+aldeed:autoform
+aldeed:collection2
+jackyqiu:meteor-jquery-nicescroll

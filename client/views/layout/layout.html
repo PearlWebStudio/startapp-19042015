@@ -1,9 +1,25 @@
 <template name="layout">
-    {{#momentum plugin='iron-router' options=transition}}
 
-    {{> navDash}}
+    <div class="wrapper">
 
-            {{>yield}}
 
-    {{/momentum}}
+
+        <!-- the wrapper -->
+        <div id="my-header">
+            {{> navDash}}
+        </div>
+        <div id="my-content">
+           <div class="overlay"></div>
+            {{#momentum plugin='iron-router' options=transition}}
+            	{{>yield}}
+             {{/momentum}}
+        </div>
+
+        <!-- Start of menu -->
+        <nav id="my-menu">
+            {{>menu}}
+        </nav>
+
+    </div>
+
 </template>
