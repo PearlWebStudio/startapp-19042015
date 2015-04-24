@@ -1,44 +1,72 @@
 .intro-wrap input,
 .intro-wrap select,
 .intro-wrap textarea {
-	width: 100%;
-	border: 1px solid #d4d4d4;
-	border-radius: 2px;
-	margin-bottom: 10px;
-	padding: 5px 10px;
+    width: 100%;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
 }
-
 .at-btn.submit {
-	position: relative;
-	padding: 8px 30px;
-	border: 0;
-	margin: 10px 1px;
-	cursor: pointer;
-	border-radius: 2px;
-	text-transform: uppercase;
-	text-decoration: none;
-	outline: none !important;
-	width: 100%;
-	margin: 5px 0;
-	background-color: #009688;
-	color: #fff;
+    position: relative;
+    padding: 8px 30px;
+    border: 0;
+    margin: 10px 1px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none !important;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #009688;
+    color: #fff;
 }
-
 .at-error {
-	background-color:#FFA2A3;
-	color: #B11030;
-	border-radius: 2px;
-	line-height: 40px;
-	margin-bottom: 16px;
+    background-color: #FFA2A3;
+    color: #B11030;
+    border-radius: 2px;
+    line-height: 40px;
+    margin-bottom: 16px;
 }
-
 .has-error input {
-	border-color: #FFA2A3
+    border-color: #FFA2A3
 }
-
 .has-error span {
-	color: #B11030;
-	margin-top: -5px;
-	display: block;
-	margin-bottom: 5px;
+    color: #B11030;
+    margin-top: -5px;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control {
+    background-image: linear-gradient(#ff5722, #ff5722), linear-gradient(#d2d2d2, #d2d2d2);
+}
+.form-group .form-control:focus,
+.form-group-default .form-control:focus {
+    background-image: linear-gradient(#ff5722, #ff5722), linear-gradient(#d2d2d2, #d2d2d2);
+}
+.block {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.block.logout {
+    text-align: center;
+}
+.block.logout a.sign-out {
+    color: #333;
+}
+#toggle-button h2 {
+    font-size: 18.7199993133545px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+#toggle-button .togglebutton label {
+    margin: 20px 10px;
+    width: 200px;
+}
+#toggle-button .togglebutton .toggle {
+    float: right;
 }

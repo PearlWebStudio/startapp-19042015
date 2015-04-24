@@ -1,0 +1,25 @@
+<template name="settings">
+    <div class="content">
+        <div class="container-fluid wrap">
+
+            <div class="block">
+                {{> editProfile}}
+            </div>
+            <div class="block">
+                <ul>
+					<li>Privacy</li>
+					<li>Legal</li>
+					<li></li>
+					<li></li>
+                </ul>
+            </div>
+
+            <div class="block logout">
+				{{> signOut}}
+            </div>
+
+            <div>Version: {{AppVersion}}</div>
+
+        </div>
+    </div>
+</template>

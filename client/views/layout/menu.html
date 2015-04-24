@@ -1,12 +1,10 @@
 <template name="menu">
     <ul>
-       	<li class="menu-header">Hi {{username}}</li>
-        <li class="mm-selected"><a href="{{pathFor 'dashboard'}}">Home</a>
+       	<li class="menu-header"> {{> avatar user=this shape="circle" size="large"}}<br>{{username}}</li>
+        <li class="{{isActiveRoute regex='dashboard'}} toggle-menu"><a href="{{pathFor 'dashboard'}}"><i class="mdi-image-filter-none"></i> Challenges</a>
         </li>
         <li><a href="#">About us</a>
         </li>
-        <li><a href="{{pathFor 'userProfile'}}">Settings</a>
-
-        </li>
+        <li class="{{isActiveRoute regex='userProfile'}} toggle-menu"><a href="{{pathFor 'userProfile'}}"><i class="mdi-action-account-circle"></i> My Profile</a></li>
     </ul>
 </template>

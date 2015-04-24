@@ -16,3 +16,4 @@ AccountsTemplates.configureRoute('signIn', {
           Router.go('/dashboard');
     }
 });
+

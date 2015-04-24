@@ -3,17 +3,22 @@ Schema = {};
 Schema.EditProfile = new SimpleSchema({
     name: {
         type: String,
-        regEx: /^[a-zA-Z-]{2,25}$/,
+        //regEx: /^[a-zA-Z-]{2,25}$/,
         optional: true,
     },
     website: {
         type: String,
-        regEx: /^[a-zA-Z-]{2,25}$/,
+        //regEx: /^[a-zA-Z-]{2,25}$/,
         optional: true,
     },
     bio: {
         type: String,
-        regEx: /^[a-zA-Z-]{2,25}$/,
+        //regEx: /^[a-zA-Z-]{2,25}$/,
+        optional: true,
+    },
+    public: {
+        type: Boolean,
+        //regEx: /^[a-zA-Z-]{2,25}$/,
         optional: true,
     },
 });
@@ -33,12 +38,12 @@ Schema.User = new SimpleSchema({
         type: String,
         regEx: SimpleSchema.RegEx.Email
     },
-    "emails.$.verified": {
-        type: Boolean
-    },
-    createdAt: {
-        type: Date
-    },
+//    "emails.$.verified": {
+//        type: Boolean
+//    },
+//    createdAt: {
+//        type: Date
+//    },
     profile: {
         type: Schema.EditProfile,
         optional: true

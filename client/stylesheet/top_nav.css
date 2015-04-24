@@ -1,0 +1,16 @@
+.navbar-header {
+    float: left;
+    width: 100%;
+}
+.top-left {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.top-right {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+.top-right[class^="mdi-"].pull-right,
+.top-right[class*="mdi-"].pull-right {
+    width: 70px;
+    text-align: center;
+    margin-left: 0;
+}

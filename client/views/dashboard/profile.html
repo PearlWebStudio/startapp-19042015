@@ -1,7 +1,36 @@
 <template name="userProfile">
-    <div class="container-fluid wrap">
- page profile
 
-   <a class="navigate-right" href="{{pathFor 'editProfile'}}">Edit Profile</a>
+    <div class="content">
+
+        <header class="profile">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="profileBox">
+                    {{> avatar user=this size='large' shape='circle'}}
+                    <h1 class="">{{username}}</h1>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="stats">
+            <div class="container">
+              <div class="row">
+              	<div class="col-sm-6 col-sm-offset-2">
+              		<i class="mdi-editor-format-quote"></i>{{bio}}
+              	</div>
+              </div>
+               <a class="btn btn-primary btn-profile btn-material-deep-orange" href="{{pathFor 'editProfile'}}">Edit Profile</a>
+                stats
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="container">
+                sono la timeline
+            </div>
+        </div>
+
     </div>
+
 </template>
